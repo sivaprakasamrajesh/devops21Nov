@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saffron & Spice | Fresh Food Delivered</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="#" class="logo">🍛 Saffron<span>&</span>Spice</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+      <button class="hamburger" id="hamburger">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-text reveal">
+      <p class="tag">Authentic • Fresh • Delicious</p>
+      <h1>Taste the <span>Magic</span> of Every Bite</h1>
+      <p>Handcrafted dishes made with love, the finest spices, and fresh local ingredients — delivered hot to your door.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn btn-outline">Book a Table</a>
+      </div>
+      <div class="stats">
+        <div><h3 data-count="150">0</h3><p>Dishes</p></div>
+        <div><h3 data-count="12">0</h3><p>Expert Chefs</p></div>
+        <div><h3 data-count="25000">0</h3><p>Happy Customers</p></div>
+      </div>
+    </div>
+    <div class="hero-img reveal">
+      <div class="plate">🍲</div>
+      <div class="float f1">🌶️</div>
+      <div class="float f2">🍅</div>
+      <div class="float f3">🌿</div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <h2 class="section-title reveal">Our <span>Menu</span></h2>
+    <div class="filters reveal">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="starter">Starters</button>
+      <button class="filter" data-filter="main">Main Course</button>
+      <button class="filter" data-filter="dessert">Desserts</button>
+      <button class="filter" data-filter="drink">Drinks</button>
+    </div>
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-img reveal">👨‍🍳</div>
+    <div class="about-text reveal">
+      <h2 class="section-title left">Why Choose <span>Us?</span></h2>
+      <p>For over 15 years, we've been serving recipes passed down through generations, blending tradition with a modern twist.</p>
+      <ul>
+        <li>🥬 100% fresh & organic ingredients</li>
+        <li>⚡ Delivery in under 30 minutes</li>
+        <li>🏆 Award-winning master chefs</li>
+        <li>💚 Hygienic kitchen, certified quality</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
+    <h2 class="section-title reveal">What People <span>Say</span></h2>
+    <div class="slider">
+      <div class="review active">
+        <p>"The best paneer tikka I've ever had! Perfectly smoky and full of flavour."</p>
+        <h4>— Priya Sharma</h4><span>⭐⭐⭐⭐⭐</span>
+      </div>
+      <div class="review">
+        <p>"Super fast delivery and the biryani was still steaming hot. Highly recommended!"</p>
+        <h4>— Amit Patel</h4><span>⭐⭐⭐⭐⭐</span>
+      </div>
+      <div class="review">
+        <p>"Lovely ambience, warm staff, and the gulab jamun is out of this world."</p>
+        <h4>— Sneha Mehta</h4><span>⭐⭐⭐⭐⭐</span>
+      </div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="section-title reveal">Book a <span>Table</span></h2>
+    <form class="reveal" id="bookingForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="date" required />
+      <select required>
+        <option value="">Number of Guests</option>
+        <option>1-2</option><option>3-4</option><option>5-8</option><option>8+</option>
+      </select>
+      <textarea placeholder="Special requests (optional)"></textarea>
+      <button type="submit" class="btn btn-primary">Reserve Now</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#" class="logo">🍛 Saffron<span>&</span>Spice</a>
+    <p>📍 SG Highway, Ahmedabad &nbsp;|&nbsp; 📞 +91 98765 43210 &nbsp;|&nbsp; 🕒 11 AM – 11 PM</p>
+    <p class="copy">© 2026 Saffron & Spice. All rights reserved.</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <button class="top-btn" id="topBtn">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
